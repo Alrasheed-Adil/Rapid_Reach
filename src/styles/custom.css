@@ -1,0 +1,193 @@
+:root {
+    --primary-color: #2AB37E;
+    --secondary-color: #22577a;
+    --tertiary-color: #c7f9cc;
+    --white-color: #ffffff;
+    --gray-color: #f8f9fa;
+  }
+  
+  /* General styles */
+  body {
+    background-color: var(--gray-color);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Navbar-specific font styles */
+  .navbar-brand, .nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; /* Bold for emphasis */
+    letter-spacing: 0.5px; /* Slight spacing for elegance */
+  }     
+
+  /* Navbar Link Hover Effects */
+.navbar-nav .nav-link {
+    font-size: 1.2rem; /* Larger text */
+    font-weight: 500;
+    color: #ffffff; /* White text */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover { /* Change background on hover */
+    color: var(--secondary-color); /* Change text color */
+  }
+  
+  /* Active Link Style */
+  .navbar-nav .nav-link.active {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    font-weight: bold;
+  }
+  
+  /* Navbar Brand Hover */
+  .navbar-brand:hover {
+    text-decoration: none;
+    color: var(--tertiary-color);
+  }
+  
+  
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+  
+  .navbar {
+    background-color: var(--secondary-color);
+  }
+  
+  .navbar a {
+    color: var(--white-color) !important;
+  }
+  
+  .navbar a:hover {
+    color: var(--primary-color) !important;
+  }
+  
+  .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+  }
+  
+  .card {
+    border: 1px solid var(--tertiary-color);
+  }
+  
+  .card-title {
+    color: var(--secondary-color);
+  }
+  /* Home enhanced Styles */
+
+  .card {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  section.bg-light {
+    background-color: var(--gray-color);
+  }
+  
+  h2 {
+    color: var(--secondary-color);
+  }
+  
+  .hero-text{
+    color: var(--white-color);
+  }
+  
+  p.lead {
+    color: var(--secondary-color);
+  }
+  .step-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* header {
+    background: url('../public/images/hero_image.jpg') no-repeat center center/cover;
+  } */
+  /* The Following styles are for the Dashboard page */
+
+  /* Dashboard Welcome Section */
+.container h1 {
+    color: var(--secondary-color);
+  }
+  
+  .container p.lead {
+    color: var(--primary-color);
+  }
+  
+  /* Cards Section */
+  .card-title {
+    font-size: 1.25rem;
+    color: var(--secondary-color);
+  }
+  
+  .card-text {
+    color: #555;
+  }
+  
+  .card a.btn {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  
+  .card a.btn:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+  }
+
+  /* Breadcrumb styles */
+  .breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  
+  .breadcrumb-item a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  .breadcrumb-item a:hover {
+    text-decoration: underline;
+  }
+  
+  .breadcrumb-item.active {
+    color: #6c757d;
+  }
+  
+  /* `Loading Spinner` styles */
+
+  .spinner-border {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .spinner-border.text-primary {
+    color: var(--primary-color);
+  }
+
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+    .hero-image img {
+      margin-top: 1rem;
+    }
+  }
+  
